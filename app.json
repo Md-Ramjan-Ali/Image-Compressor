@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "image-compressor",
+    "name": "Image Compressor",
     "slug": "image-compressor",
     "version": "1.0.0",
     "sdkVersion": "54.0.0",
@@ -16,7 +16,17 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ],
+      "package": "com.ramjan100.imagecompressor"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +40,11 @@
           "isAccessMediaLocationEnabled": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d39edad6-1950-4be6-86eb-e7df2a7d3ba3"
+      }
+    }
   }
 }
